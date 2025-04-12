@@ -19,7 +19,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu, X, LogOut, User, Suitcase, PlusCircle, Home, Globe, Map, Heart, Settings, Search } from 'lucide-react';
+import { Menu, X, LogOut, User, Briefcase, PlusCircle, Home, Globe, Map, Heart, Settings, Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { LoginForm, RegisterForm } from './AuthForms';
@@ -61,7 +61,7 @@ const Navigation: React.FC = () => {
   const navItems = [
     { label: 'Home', path: '/', icon: <Home className="h-5 w-5" /> },
     { label: 'Explore', path: '/explore', icon: <Globe className="h-5 w-5" /> },
-    { label: 'My Trips', path: '/trips', icon: <Suitcase className="h-5 w-5" /> },
+    { label: 'My Trips', path: '/trips', icon: <Briefcase className="h-5 w-5" /> },
     { label: 'Saved', path: '/saved', icon: <Heart className="h-5 w-5" /> },
   ];
 
@@ -168,7 +168,7 @@ const Navigation: React.FC = () => {
                       Profile
                     </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => navigate('/trips')}>
-                      <Suitcase className="mr-2 h-4 w-4" />
+                      <Briefcase className="mr-2 h-4 w-4" />
                       My Trips
                     </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => navigate('/settings')}>
